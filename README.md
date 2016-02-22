@@ -1,6 +1,6 @@
 # SimpTCP
 During my third year at INSA Toulouse, we had to design a network protocol which mixed TC and UDP features. This network protocol works with SYN, SYN-ACK, ACK when establishing the connexion between a custom and a server. The custom can send PDU package and the server received this package and send an ACK.  
-We implemented the following functions in the file src/simptcp_lib.c : 
+We implemented the following functions in the file src/simptcp_lib.c :\n 
 closed_simptcp_socket_state_active_open
 closed_simptcp_socket_state_passive_open
 listen_simptcp_socket_state_accept

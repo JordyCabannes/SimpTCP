@@ -362,7 +362,7 @@ u_int16_t hlen; /* header length */
         //payload= malloc(2*dlen);
       memcpy(payload,(pdu+hlen),dlen);
     }
-    printf("////////////////////////////////////////////////dans extract data :%s\n",payload) ;
+    //printf("////////////////////////////////////////////////dans extract data :%s\n",payload) ;
   return dlen;
 }
 

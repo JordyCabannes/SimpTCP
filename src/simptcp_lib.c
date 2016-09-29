@@ -1100,7 +1100,6 @@ void synsent_simptcp_socket_state_handle_timeout (struct simptcp_socket* sock)
 	sortie_du_sendto =libc_sendto(simptcp_entity.udp_fd,sock->out_buffer,SIMPTCP_GHEADER_SIZE ,0,(struct sockaddr * )(&(sock->remote_udp)),sizeof(struct sockaddr_in)) ;  
 	start_timer(sock, sock->timer_duration);	
 	//simptcp_lprint_packet(sock->out_buffer);//on affiche le pdu SYN 
-	return 0;
 }
 
 
@@ -2782,7 +2781,6 @@ void timewait_simptcp_socket_state_handle_timeout (struct simptcp_socket* sock)
 	printf("---------------- Fermeture de connection ---------------\n");
 	free(sock);
 	sock->socket_state = &(simptcp_entity.simptcp_socket_states->closed);
-	return 0;	
 	
 }
 
